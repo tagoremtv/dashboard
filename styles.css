@@ -1,0 +1,94 @@
+/* General styling */
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #ff6b6b;
+}
+
+/* User card styling */
+.user-card {
+    background-color: #1c1c1c;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+    color: #e0e0e0;
+    position: relative;
+}
+
+.user-card:hover {
+    transform: scale(1.05);
+}
+
+.view-details-btn {
+    background-color: #ff6b6b;
+    color: #ffffff;
+    opacity: 0;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    border: none;
+    transition: opacity 0.3s;
+}
+
+.user-card:hover .view-details-btn {
+    opacity: 1;
+}
+
+.card-title, .card-text {
+    color: #ffffff;
+}
+
+/* Input styling */
+#searchInput, #sortSelect {
+    background-color: #1c1c1c;
+    color: #e0e0e0;
+    border: 1px solid #333333;
+}
+
+#searchInput::placeholder, #sortSelect {
+    color: #888888;
+}
+
+/* Modal styling */
+.modal-content {
+    background-color: #1c1c1c;
+    color: #e0e0e0;
+    border: none;
+}
+
+.modal-header {
+    border-bottom: 1px solid #333333;
+}
+
+.modal-footer button {
+    background-color: #ff6b6b;
+    color: #ffffff;
+    border: none;
+}
+
+.btn-primary {
+    background-color: #ff6b6b;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #ff4d4d;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+    .col-md-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .container {
+        padding: 10px;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+}
